@@ -1,0 +1,84 @@
+/* ===== NUCLEAR BACKGROUND FIX ===== */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+ 
+  background: linear-gradient( #007F5F, #2B2D42);
+  background-attachment: fixed;
+  background-size: cover;
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( #007F5F, #2B2D42);
+    z-index: -1000;
+  }
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #149b8b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.logout-button:hover {
+  background-color: #370abf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  
+  background: linear-gradient( #007F5F, #2B2D42) fixed;
+  /* Backup gradient layer */
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( #007F5F, #2B2D42);
+    z-index: -1000;
+  }
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+
