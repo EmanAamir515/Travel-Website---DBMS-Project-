@@ -2,7 +2,7 @@
 
 ## Overview  
 This is a full-stack Travel Website project developed as part of our Database Lab course. The application allows users to:  
-- Share travel experiences with images.  
+- Share travel experiences with image.  
 - Track past trips and future travel goals.  
 - Connect with other travelers and share trip histories.  
 - Like and comment on travel posts.  
@@ -11,11 +11,11 @@ This is a full-stack Travel Website project developed as part of our Database La
 ### **Backend**  
 - **Node.js** with **Express.js**  
 - **MSSQL** for database management  
-- **Multer** for file uploads  
-- **CORS** for cross-origin requests  
+- **Multer** for image uploading  
+- **CORS** for APIs requests  
 
 ### **Frontend**  
-- **React.js** (not included in this repository; see the frontend repo)  
+- **React.js** user interface
 - **Axios** for API calls  
 - **CSS/JSX** for styling  
 
